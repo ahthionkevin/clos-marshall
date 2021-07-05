@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;400;500;600;700&family=Dancing+Script:wght@500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Advent Pro',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/* ************NAVBAR*********** */
+header nav{
+    overflow: hidden;
+    background-color: #fffae1;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+    
+}
+
+header li{
+  float: right;
+  font-size: 1.2em
+}
+
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+#logo{
+    font-family: 'Dancing script',cursive;
+    font-weight: bold;
+    float: left;
+}
+
+
+
+/* *************IMAGErincipale******** */
+
+#imagePrincipale{
+    padding-top: 60px;
+    height: 100vh;
+    background: url(./media/image-principale.JPG) no-repeat fixed center/cover;
+    
+    
+}
+h1{
+    font-family: 'Dancing script',cursive;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 200px;
+    text-shadow: -8px 1px 7px #2f2b2b66;
+}
+
+#premierTrait{
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: antiquewhite;;
+}
+header h3{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: -8px 1px 7px #2f2b2b66;
+}
+
+
+/* ************section 1********* */
+#presentation{
+    background-color: #fffae1;
+    padding: 100px 0px;
+}
+
+#textIntro{
+    padding: 0 20%;
+}
+
+
+#prestation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 10%;
+}
+
+.imagesPrestations h4{
+    font-family: 'Dancing script';
+}
+.imagesPrestations img{
+    border-radius: 10px;
+    box-shadow: 10px 4px 4px rgba(10,10,10,0.6);
+    transition: 0.4s ease-in-out;
+}
+
+.imagesPrestations h4{
+  text-align:center;
+  font-size: 1.5rem;
+}
+
+.imagesPrestations img:hover{
+    transform: scale(105%);
+    opacity: 0.7;
+    margin: 10px;
+    font-weight: 500;
+    
+}
+
+/* *********TOURISME********** */
+#tourisme{
+    background-color: #f1f2f6;
+    height: 200vh;
+    padding: 10px 2%;
+}
+
+#ocean{
+    background: url(./media/ocean.jpg) no-repeat 50% 50%;
+}
+#chateau{
+    background: url(./media/chateau.JPG) no-repeat 50% 50%;
+    
+}
+#phare{
+    background: url(./media/phare.JPG) no-repeat 50% 50%;
+ 
+}
+#vign{
+    background: url(./media/vignes.jpg) no-repeat 50% 50%;
+}
+
+#tourisme li{
+    margin: 65px 100px 0 100px;
+    height: 226px;
+    width:55%;
+    max-width: 550px;
+    float:left;
+    box-shadow: 4px 1px 4px black;
+    border-radius: 10px;
+}
+
+#tourisme p{
+    background-color: #01df74;
+    float: right;
+    height: 35px;
+    width: 235px;
+    margin: 50px -100px 0 0;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 4px rgba(90,43,0,0.7);
+}
+
+#tourisme #chateau,#tourisme #vign{
+    float: right;
+}
+
+#chateau p,#vign p{
+    float: left;
+    background-color: cyan;
+    margin-left: -180px;
+    box-shadow: -1px -1px -4px rgba(90,43,0,0.7);
+}
+
+
+/* *******************FOOTER************ */
+
+
+footer{
+    background-color: #524A3A;
+    color: whitesmoke;
+    padding: 1px 20% 50px;
+    text-align: center;
+}
+form{
+    margin: 0 auto;
+    max-width: 900px;
+}
+input,textarea,button{
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size:1.4rem;
+    margin: 1px 0;
+    border:none;
+    width: 55%;
+    font-family: 'Advent Pro';
+    border: none;
+    transition: 0.4s;
+}
+textarea{
+    resize: none;
+}
+
+
+button:hover{
+    background: #e55039;
+    color: white;
+    cursor: pointer;
+}
+
+#deuxiemeTrait{
+    width: 55%;
+    height: 1px;
+    background-color: white;
+    margin:40px auto;
+}
+
+i{
+    color: whitesmoke;
+}
+
+#copyrightEtIcones{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   font-size: 1.5rem;
+   text-align: center;
+}
+#icones a{
+    padding: 0px 20%;
+    transition: 0.4s;
+}
+#icones{
+    display: flex;
+    justify-content: space-around;
+}
+#icones a:hover{
+    transform: scale(125%);
+}
